@@ -58,6 +58,16 @@ router.get('/posts', (req, res) => {
 		.catch((err) => res.status(500).json({ error: 'The posts information could not be retrieved.' }));
 });
 
+// router.get('/posts', async(req, res) => {
+// 	try{
+// 		const data=await db.find()
+// 		res.json(data)
+// 	}catch{
+// 		res.status(500).json({ error: 'The posts information could not be retrieved.' })
+// 	}
+
+// });
+
 router.get('/posts/:id', (req, res) => {
 	db
 		.findById(req.params.id)

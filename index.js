@@ -3,7 +3,7 @@ const server = express();
 const postsRoutes = require('./data/appRoutes/posts.js');
 var cors = require('cors');
 server.use(express.json());
-require('dotenv').config();
+// require('dotenv').config();
 
 const port = process.env.PORT || 5000;
 
