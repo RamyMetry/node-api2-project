@@ -7,6 +7,7 @@
   "scripts": {
     "server": "nodemon index.js",
     "watch":"nodemon -r dotenv/config index",
+    "start":"node index.js",
     "format": "prettier --write \"**/*.{js,scss,css,html,json,md,less,tsx, ts}\""
   },
   "dependencies": {
