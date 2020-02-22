@@ -6,6 +6,7 @@ server.use(express.json())
 require("dotenv").config()
 
 
+
 server.use(cors());
 server.use('/',(req,res)=>{res.send(`<h1>${process.env.WELCOME}</h1>`)})
 server.use('/api/', postsRoutes);
