@@ -8,9 +8,9 @@ require('dotenv').config();
 const port = process.env.PORT || 5000;
 
 server.use(cors());
-server.use('/', (req, res) => {
-	res.send(`<h1>${process.env.WELCOME}</h1>`);
-});
+// server.use('/', (req, res) => {
+// 	res.send(`<h1>${process.env.WELCOME}</h1>`);
+// });
 server.use('/api/', postsRoutes);
 
 server.use((req, res) => {
